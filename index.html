@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Fonts</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Protest+Strike&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Pacifico&family=Protest+Strike&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Kdam+Thmor+Pro&family=Pacifico&family=Protest+Strike&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Honk&family=Kdam+Thmor+Pro&family=Pacifico&family=Protest+Strike&display=swap">
+    
+    <style>
+        body {
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background: linear-gradient(to right, #4CAF50, #2196F3); 
+            color: #fff;
+            padding: 20px;
+            cursor: pointer;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        h1:not(:first-child) {
+            display: inline-block;
+            margin: 0 15px;
+            cursor: pointer;
+            color: #fff;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        h1:not(:first-child):hover {
+            background-color: #45a049; 
+        }
+
+        footer {
+            background: linear-gradient(to right, #4CAF50, #2196F3); 
+            color: #fff;
+            padding: 20px;
+            cursor: pointer;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .font-demo {
+            display: none; 
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .font-demo.active {
+            display: block; 
+        }
+
+        .font-demo h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #333;
+            font-family: 'Protest Strike', sans-serif;
+        }
+
+        .font-demo p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #666;
+            font-family: 'Protest Strike', sans-serif;
+        }
+
+        #fontDetailsProtestStrike h2, #fontDetailsProtestStrike p {
+            font-family: 'Protest Strike', sans-serif;
+        }
+
+        #fontDetailsEBGaramond h2, #fontDetailsEBGaramond p {
+            font-family: 'EB Garamond', sans-serif;
+        }
+
+        #fontDetailsPacifico h2, #fontDetailsPacifico p {
+            font-family: 'Pacifico', cursive;
+        }
+
+        #fontDetailsKdamThmorPro h2, #fontDetailsKdamThmorPro p {
+            font-family: 'Kdam Thmor Pro', sans-serif;
+        }
+
+        #fontDetailsHonk h2, #fontDetailsHonk p {
+            font-family: 'Honk', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header id="fontSelector">
+        <h1>Unique Font with Syntax</h1>
+        <h1 data-font="ProtestStrike">Protest Strike</h1>
+        <h1 data-font="EBGaramond">EB Garamond</h1>
+        <h1 data-font="Pacifico">Pacifico</h1>
+        <h1 data-font="KdamThmorPro">Kdam Thmor Pro</h1>
+        <h1 data-font="Honk">Honk</h1>
+    </header>
+
+
+    <h3>This Page displays unique fonts that are imported from web...!</h3>
+    <h4>Click on the differnt font names to see fonts and their Syntax.</h4>
+    
+    <div class="container">
+        <div class="font-demo" id="fontDetailsProtestStrike">
+            <h2>Protest Strike</h2>
+            <p>This is a demonstration of the Protest Strike font.</p>
+            <p>@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');</p>
+        </div>
+
+        <div class="font-demo" id="fontDetailsEBGaramond">
+            <h2>EB Garamond</h2>
+            <p>This is a demonstration of the EB Garamond font.</p>
+            <p>@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,
+                wght@0,400..800;1,400..800&family
+                =Protest+Strike&display=swap');
+            </p>
+        </div>
+
+        <div class="font-demo" id="fontDetailsPacifico">
+            <h2>Pacifico</h2>
+            <p>This is a demonstration of the Pacifico font.</p>
+            <p>@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital
+                ,wght@0,400..800;1,400..800&family=Pacifico&family
+                =Protest+Strike&display=swap');
+            </p>
+        </div>
+
+        <div class="font-demo" id="fontDetailsKdamThmorPro">
+            <h2>Kdam Thmor Pro</h2>
+            <p>This is a demonstration of the Kdam Thmor Pro font.</p>
+            <p>@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,
+                wght@0,400..800;1,400..800&family=Kdam+Thmor+Pro&family=Pacifico&family
+                =Protest+Strike&display=swap');
+            </p>
+        </div>
+
+        <div class="font-demo" id="fontDetailsHonk">
+            <h2>Honk</h2>
+            <p>This is a demonstration of the Honk font.</p>
+            <p>@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,
+                wght@0,400..800;1,400..800&family=Honk&family=
+                Kdam+Thmor+Pro&family=Pacifico&family=Protest+Strike&display=swap');
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+        document.getElementById('fontSelector').addEventListener('click', function(event) {
+            if (event.target.tagName === 'H1') {
+                const font = event.target.getAttribute('data-font');
+                const fontDetails = document.querySelectorAll('.font-demo');
+                fontDetails.forEach(details => details.classList.remove('active'));
+                const selectedFontDetails = document.getElementById(fontDetails${font});
+                if (selectedFontDetails) {
+                    selectedFontDetails.classList.add('active');
+                }
+            }
+        });
+
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
