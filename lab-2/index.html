@@ -177,16 +177,21 @@
     </footer>
     <script type="text/javascript">
         document.getElementById('fontSelector').addEventListener('click', function(event) {
-            if (event.target.tagName === 'H1') {
-                const font = event.target.getAttribute('data-font');
-                const fontDetails = document.querySelectorAll('.font-demo');
-                fontDetails.forEach(details => details.classList.remove('active'));
-                const selectedFontDetails = document.getElementById('fontDetails${font}');
-                if (selectedFontDetails) {
-                    selectedFontDetails.classList.add('active');
-                }
-            }
-        });
+    if (event.target.tagName === 'H1') {
+        const font = event.target.getAttribute('data-font');
+        const fontDetails = document.querySelectorAll('.font-demo');
+        fontDetails.forEach(details => details.classList.remove('active'));
+        // Corrected to use template literals for string interpolation
+        const selectedFontDetails = document.getElementById(`fontDetails${font}`);
+        if (selectedFontDetails) {
+            selectedFontDetails.classList.add('active');
+        }
+    }
+});
+
+var x = document.lastModified;
+document.getElementById('lastModified').textContent = x;
+
 
         var x = document.lastModified;
         document.getElementById('lastModified').textContent = x;
