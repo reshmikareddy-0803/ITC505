@@ -181,7 +181,7 @@
                 const font = event.target.getAttribute('data-font');
                 const fontDetails = document.querySelectorAll('.font-demo');
                 fontDetails.forEach(details => details.classList.remove('active'));
-                const selectedFontDetails = document.getElementById('fontDetails${font}');
+                const selectedFontDetails = document.getElementById(fontDetails${font});
                 if (selectedFontDetails) {
                     selectedFontDetails.classList.add('active');
                 }
