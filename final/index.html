@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lights Out Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Twilight Tangle: Conquering the Lights Out Challenge</h1>
+        <img src="https://play-lh.googleusercontent.com/m3l5Sce3FpPtRRX0LAnlAZLJKQyB8NGXmIiJxxVMMMtL141IPKmZT734lVBLD7SMPg=w240-h480-rw" alt="Game Image" width="350" height="250">
+        <p>The goal of the Lights Out game is to switch off all the lights on a grid. 
+            When you click on a square, it changes its state, along with the states of its neighboring squares. 
+            For instance, if you click on a lit square, it turns off, and its adjacent squares switch - from on to off 
+            or vice versa. This creates a puzzle where you need to plan your clicks strategically to turn off all lights 
+            on the grid.</p>
+        <div class="board" id="board"></div>
+        <button id="restartButton">Restart Game</button>
+    </div>
+    <footer>
+        <h2>Addendem:</h2>
+        <p>The HTML file serves as the blueprint for the Lights Out Game webpage. It sets up the fundamental structure by defining key components such as the game container, which houses essential elements like the title, image, descriptive text, game board, and a restart button for resetting the game state. Additionally, it includes a footer section that can accommodate supplementary information or credits.
+
+            In contrast, the CSS file plays a crucial role in enhancing the visual appeal and functionality of the webpage. It employs various styling techniques, including flexbox and grid layouts, to create a responsive design that adapts well to different screen sizes and devices. By applying styles to elements such as squares (representing the game grid), buttons (for user interaction), and the footer, the CSS file ensures that the webpage not only looks visually appealing but also functions smoothly across platforms.
+            
+            The JavaScript file brings the Lights Out Game to life by introducing interactive features. It generates a grid of squares (typically 5x5 in this case) that respond dynamically to user clicks. When a square is clicked, it toggles its state (active or inactive), and this action also affects adjacent squares according to the game's rules. For instance, clicking on a lit square turns it off and switches neighboring squares' states. This interactivity creates a challenging puzzle experience for players.
+            
+            Moreover, the JavaScript file incorporates functionalities essential for the game's logic, such as checking win conditions to determine if the player has successfully turned off all lights, providing a restart option to reset the game, and implementing a shuffle mechanism to randomize the initial state of the game board. It also handles DOM manipulation, updating the visual representation of the game grid based on user interactions, and utilizes event listeners to respond to user actions effectively, contributing to an immersive and enjoyable Lights Out puzzle experience.</p>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
